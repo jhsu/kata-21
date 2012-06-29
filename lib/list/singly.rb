@@ -30,21 +30,21 @@ class List::Singly
   ##
   # Remove a node and return the removed node.
   def delete(node)
-		return nil unless @head
+    return nil unless @head
 
-		current_node = @head
-		previous_node = @head
+    current_node = @head
+    previous_node = @head
 
-		while current_node.value != node.value && current_node
-			previous_node = current_node
-			current_node = current_node.next 
-		end		
+    while current_node.value != node.value && current_node
+	previous_node = current_node
+	current_node = current_node.next
+    end
 
-		unless current_node.nil? && previous_node.nil?
-			previous_node.next = current_node.next
-			@head = current_node.next if  @head == current_node
-			@tail = previous_node if @tail == current_node
-		end
+    unless current_node.nil? && previous_node.nil?
+	previous_node.next = current_node.next
+	@head = current_node.next if  @head == current_node
+	@tail = previous_node if @tail == current_node
+    end
   end
 
   ##
