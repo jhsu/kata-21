@@ -41,7 +41,6 @@ describe List::Singly do
     @list.values.must_equal []
   end
 
-
   it "should know about its next node" do
     @list.add("one")
     @list.add("two")
@@ -50,4 +49,11 @@ describe List::Singly do
     node.next.value.must_equal "two"
   end
 
+  it "should not have a next node if only one" do
+    node = @list.add("single")
+    node.next.must_be_nil
+
+    last_node = @list.add("last")
+    last_node.next.must_be_nil
+  end
 end
