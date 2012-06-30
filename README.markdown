@@ -32,5 +32,5 @@ Kata from http://codekata.pragprog.com/2007/01/kata_twenty_one.html
 
 ## Running tests
 
-1. Install gems using  `bundle install` (if on non-mac, run `bundle install --without=mac`
+1. Install gems using  `bundle install` (if on non-mac, run `bundle install --without=mac`)
 2. run `rake`
