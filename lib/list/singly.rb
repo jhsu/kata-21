@@ -36,14 +36,14 @@ class List::Singly
     previous_node = @head
 
     while current_node.value != node.value && current_node
-	previous_node = current_node
-	current_node = current_node.next
+      previous_node = current_node
+      current_node = current_node.next
     end
 
     unless current_node.nil? && previous_node.nil?
-	previous_node.next = current_node.next
-	@head = current_node.next if  @head == current_node
-	@tail = previous_node if @tail == current_node
+      previous_node.next = current_node.next
+      @head = current_node.next if  @head == current_node
+      @tail = previous_node if @tail == current_node
     end
   end
 
