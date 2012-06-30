@@ -2,6 +2,8 @@
 
 Attempted by Joseph Hsu <jhsu.x1@gmail.com>
 
+[![Build Status](https://secure.travis-ci.org/jhsu/kata-21.png)](http://travis-ci.org/jhsu/kata-21)
+
 Kata from http://codekata.pragprog.com/2007/01/kata_twenty_one.html
 
     list = List.new
